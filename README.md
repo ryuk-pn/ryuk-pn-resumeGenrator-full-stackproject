@@ -51,9 +51,6 @@ To run this project locally, follow these steps:
 
 5. **Run Locally**: Access the project through your web browser using the local server address (e.g., `http://localhost/project_name`).
 
-## Usage
-
-[Provide instructions on how to use or interact with the application. Include screenshots or GIFs if possible to showcase the application's functionality.]
 
 ## Contributing
 
