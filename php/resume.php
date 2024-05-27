@@ -35,32 +35,32 @@
 include('connection.php');
 
 // Sanitize input data
-$firstname = mysqli_real_escape_string($con, $_REQUEST['firstname']);
-$middlename = mysqli_real_escape_string($con, $_REQUEST['middlename']);
-$lastname = mysqli_real_escape_string($con, $_REQUEST['lastname']);
-$designation = mysqli_real_escape_string($con, $_REQUEST['designation']);
-$address = mysqli_real_escape_string($con, $_REQUEST['address']);
-$Email = mysqli_real_escape_string($con, $_REQUEST['email']);
-$phno = mysqli_real_escape_string($con, $_REQUEST['phoneno']);
-$summary = mysqli_real_escape_string($con, $_REQUEST['summary']);
-$acti = mysqli_real_escape_string($con, $_REQUEST['achieve_title']);
-$acdesc = mysqli_real_escape_string($con, $_REQUEST['achieve_description']);
-$exp_title = mysqli_real_escape_string($con, $_REQUEST['exp_title']);
-$exp_organization = mysqli_real_escape_string($con, $_REQUEST['exp_organization']);
-$exp_location = mysqli_real_escape_string($con, $_REQUEST['exp_location']);
-$exp_start_date = mysqli_real_escape_string($con, $_REQUEST['exp_start_date']);
-$exp_end_date = mysqli_real_escape_string($con, $_REQUEST['exp_end_date']);
-$exp_description = mysqli_real_escape_string($con, $_REQUEST['exp_description']);
-$edu_school = mysqli_real_escape_string($con, $_REQUEST['edu_school']);
-$edu_degree = mysqli_real_escape_string($con, $_REQUEST['edu_degree']);
-$edu_city = mysqli_real_escape_string($con, $_REQUEST['edu_city']);
-$edu_start = mysqli_real_escape_string($con, $_REQUEST['edu_start_date']);
-$edu_end = mysqli_real_escape_string($con, $_REQUEST['edu_end_date']);
-$edu_description = mysqli_real_escape_string($con, $_REQUEST['edu_description']);
-$proj_title = mysqli_real_escape_string($con, $_REQUEST['proj_title']);
-$proj_link = mysqli_real_escape_string($con, $_REQUEST['proj_link']); 
-$proj_description = mysqli_real_escape_string($con, $_REQUEST['proj_description']);
-$skill = mysqli_real_escape_string($con, $_REQUEST['skills']);
+$firstname = ($_REQUEST['firstname']);
+$middlename = ($_REQUEST['middlename']);
+$lastname = ($_REQUEST['lastname']);
+$designation = ($_REQUEST['designation']);
+$address = ($_REQUEST['address']);
+$Email = ($_REQUEST['email']);
+$phno = ($_REQUEST['phoneno']);
+$summary = ($_REQUEST['summary']);
+$acti = ($_REQUEST['achieve_title']);
+$acdesc = ($_REQUEST['achieve_description']);
+$exp_title = ($_REQUEST['exp_title']);
+$exp_organization = ($_REQUEST['exp_organization']);
+$exp_location = ($_REQUEST['exp_location']);
+$exp_start_date = ($_REQUEST['exp_start_date']);
+$exp_end_date = ($_REQUEST['exp_end_date']);
+$exp_description = ($_REQUEST['exp_description']);
+$edu_school = ( $_REQUEST['edu_school']);
+$edu_degree = ( $_REQUEST['edu_degree']);
+$edu_city = ( $_REQUEST['edu_city']);
+$edu_start = ( $_REQUEST['edu_start_date']);
+$edu_end = ( $_REQUEST['edu_end_date']);
+$edu_description = ( $_REQUEST['edu_description']);
+$proj_title = ( $_REQUEST['proj_title']);
+$proj_link = ( $_REQUEST['proj_link']); 
+$proj_description = ( $_REQUEST['proj_description']);
+$skill = ( $_REQUEST['skills']);
 
 // SQL query
 $sql = "INSERT INTO `resume_details`(
@@ -142,7 +142,7 @@ if($results) {
             </div>
           </div>
 
-
 </body>
 </html>
+
 
